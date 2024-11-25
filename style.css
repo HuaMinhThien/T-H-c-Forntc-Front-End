@@ -1,0 +1,50 @@
+body{
+    background-image: url(./pic/6ab7b6c645a728def0a427b1f8a4a51e.png);
+}
+
+
+
+h1{
+    color: red;
+}
+
+.chan{
+    background-color: brown; color: aqua;
+}
+
+.le{
+    background-color: lightgreen; color: crimson;
+}
+
+p{
+    background-color: aqua;
+}
+
+#xanhla{
+    background-color: green;
+}
+
+#do{
+    color: red;
+}
+
+.vang{
+    background-color: black; color: yellow;
+}
+
+
+
+
+
+p{
+    border-style: solid;
+    border-width: 4px;
+    border-color: yellow;
+    border-radius: 15px ;
+    padding: 10px;
+    border-top-color: rgb(255, 15, 15);
+    border-right-color: rgb(255, 15, 15);
+
+}
+
+
