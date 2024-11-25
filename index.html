@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>home</title>
+        <meta charset="utf-8">
+        <meta name="thien1gucci" content="Thien1gucci">
+
+    </head>
+    <body style="background-color:aquamarine">
+        <h1 style="color:red"> Hello mọi người</h1>
+        <h2 style="color:rgb(232, 255, 62)">thien day ne</h2>
+        
+        <a href="https://www.tiktok.com/@thien1gucciii?lang=en" target="_blank"> 
+            Tik Tok em Thien
+        </a>
+        <br>
+        <a href="Page2.html">
+            Page2
+        </a>
+        <br>
+        <!-- ../ : là để lấy cái ở ngoài
+        /folder/ : là để lấy cái bên trong folder -->
+        <a href="../hoc2.html">
+            Bai 2
+        </a>
+        <br>
+        <!-- sử dụng thẻ href ở trong thẻ a và có thẻ img thì ta 
+         có thể nhấp vào ảnh để đi đến đường link mà ta cho vào href-->
+       <a href="https://www.tiktok.com/@thien1gucciii?lang=en">
+        <img src="../pic/Screenshot 2024-11-21 204700.png" height="300px" alt=" Proflie Em Thiện" title="Proflie Em Thiện">
+       </a>
+
+        <audio loop controls >
+            <source src="../audio/2024-09-19 15-31-41.mp4">
+            <source src="../audio/2024-09-19 15-31-41.mp4"> 
+        </audio>
+
+        <video controls width="300">
+            <source src="../video/lv_7318253840061484309_20241012222754.mp4">
+        </video>
+        <br>
+        
+
+        <!-- các loại list-->
+         
+         <h2 style="color:brown"> dạng không sắp xếp</h2>
+         nested list
+            <ul>
+                <li> Trái cây</li>
+                <li> Thịt cá
+                    <ul>
+                        <li>bò</li>
+                        <li>cá hồi</li>
+                        <li>heo</li>
+                    </ul>
+                </li>
+                <li> Rau củ</li>
+            </ul>
+
+         <h2 style="color:blue "> dạng được sắp xếp</h2>
+            <ol type="A">
+                <li> Trái cây</li>
+                <li> Thịt cá</li>
+                <li> Rau củ</li>
+            </ol>
+         <h2> dạng danh sách mô tả</h2>
+            <dl>
+                <dt>Món ngon</dt>
+                <dd>Pizza, bánh mì, phở</dd>
+                <dt>Tiêu đề</dt>
+                <dd>mô tả</dd>
+            </dl>
+
+        <table>
+            <tr bgcolor="green">
+                <th> STT </th>
+                <th> Tên </th>
+                <th> Ngành </th>
+            </tr>
+            <tr bgcolor="lightgreen">
+                <td> PS44511 </td>
+                <td> Hứa Minh Thiện </td>
+                <td> Lập trình web </td>
+            </tr>
+        </table>
+        <!-- thẻ iframe này dùng để nhúng 1
+          nội dung nào đó vào trang web-->
+        <iframe src="../hoc2.html"></iframe>
+        <br>
+        <br>
+        button
+        <button onclick="changeText()" style="border-radius: 5px;">
+            click me
+        </button>
+        <h1 id="h1id">Hello</h1>
+
+        <script>
+            changeText = () => {
+                document.getElementById("h1id").innerHTML = " Chào ní"
+            }
+        </script>
+
+        <form method="post" action="">
+
+            <h1>Đăng nhập</h1>
+            <div>
+                <label for="fname"> first name: </label>
+                <input type="text" id="fname" name="fname"><br>
+            </div>
+            <div>
+                <label for="lname"> first name: </label>
+                <input type="text" id="lname" name="lname"><br>
+            </div>
+            <div>
+                <label for="pass"> password: </label>
+                <input type="password" id="fname" name="fname"><br>
+            </div>
+            <div>
+                <label for="date"> date: </label>
+                <input type="date" id="fname" name="fname"><br>
+            </div>
+            <div>
+                <label for="date"> date: </label>
+                <input type="number" id="fname" name="fname"><br>
+            </div>
+            <div>
+                <select name="major" id="">
+                    <option value="CNTT">CNTT</option>
+                    <option value="frontEnd">frontEnd</option>
+                    <option value="backEnd">backEnd</option>
+                </select>
+            </div>
+
+            <div>
+                <input type="radio" name="role" value="hoc sinh">hoc sinh
+                <input type="radio" name="role" value="giao vien">giao vien
+                <input type="radio" name="role" value="adnim">admin
+            </div>
+
+            <!-- submit nay no se gui tat ca cac gia tri nay di-->
+            <input type="submit" name="" id="">
+            <input type="reset" name="" id="">
+
+        </form>
+    </body>
+</html>
+
+
+
+
+
+
+
